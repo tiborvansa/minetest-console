@@ -328,6 +328,7 @@ minetest.register_chatcommand( "pipe", {
 	end
 } )
 
+--[[
 globaltimer.start( 1.0, "console:slurp_file", function ( )
 	if log_file then
 		local str = log_file:read( "*a" )
@@ -353,3 +354,4 @@ globaltimer.start( 0.2, "console:resize_huds", function( )
 		end
 	end
 end )
+]]
